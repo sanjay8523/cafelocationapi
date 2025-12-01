@@ -1,0 +1,6 @@
+const CONFIG = {
+  API_KEY: window._env_.VITE_API_KEY,
+  CAFE_LAT: 12.324309,
+  CAFE_LNG: 76.626893,
+  MAX_DISTANCE_KM: 3.0,
+};
