@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yell-O-Houze Delivery</title>
+
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -17,6 +22,7 @@
         <div class="content">
             <div class="status-box">
                 <p id="statusText">Enable location to check delivery</p>
+                
                 <div id="distanceDisplay" style="display:none; margin-top:10px;">
                     <span class="distance-val" id="distanceVal">0.00 km</span>
                     <br><small>Driving Distance</small>
@@ -31,9 +37,16 @@
         </div>
     </div>
 
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
+
+    <!-- ENV VARIABLE FIRST -->
+    <script src="env.js"></script>
+
+    <!-- CONFIG (reads env variable) -->
     <script src="config.js"></script>
+
+    <!-- MAIN APP SCRIPT -->
     <script src="app.js"></script>
 </body>
 </html>
