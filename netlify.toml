@@ -1,2 +1,12 @@
 [build]
   publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+[edge_functions]
+  directory = "netlify/edge-functions"
+
+[[edge_functions]]
+  function = "env-inject"
+  path = "/*"

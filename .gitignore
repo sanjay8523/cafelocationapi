@@ -1,2 +1,5 @@
-config.js
-env.js
+# Do NOT ignore whole files
+# Just ignore the version with real secret values
+
+config.js.local
+env.js.local
